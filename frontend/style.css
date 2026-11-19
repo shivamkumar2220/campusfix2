@@ -1,0 +1,68 @@
+/* CampusFix 2 - green and white theme */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f5f3;
+    color: #13251a;
+}
+
+h1, h2, h3 { margin: 0 0 10px; }
+h1 span, h2 span { color: #1b7a43; }
+.muted { color: #6b7d72; }
+.small { font-size: 13px; }
+
+/* Login page: put the box in the middle of the screen */
+.center { min-height: 100vh; display: grid; place-items: center; padding: 16px; }
+.center .box { width: 100%; max-width: 380px; text-align: center; }
+
+/* White rounded card */
+.box {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(19, 60, 35, 0.08);
+}
+
+label { display: block; text-align: left; font-size: 14px; margin: 12px 0 4px; }
+
+input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dfe8e2;
+    border-radius: 10px;
+    font: inherit;
+}
+textarea { min-height: 80px; }
+input:focus, textarea:focus { outline: none; border-color: #1b7a43; }
+
+button {
+    margin-top: 16px;
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 999px;
+    background: #1b7a43;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover { background: #145c32; }
+button.outline { width: auto; margin: 0 0 0 10px; padding: 6px 14px; background: white; color: #1b7a43; border: 1px solid #1b7a43; }
+
+.success { color: #16a34a; }
+.error { color: #dc2626; }
+
+/* Complaint page */
+header { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; background: white; }
+header h2 { margin: 0; }
+main { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; padding: 24px; max-width: 1100px; margin: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #edf2ee; }
+th { color: #6b7d72; font-weight: 600; }
+.badge { background: #e6f2eb; color: #1b7a43; padding: 3px 10px; border-radius: 999px; font-size: 12px; }
+
+/* Phone screens: one column */
+@media (max-width: 700px) { main { grid-template-columns: 1fr; padding: 16px; } }

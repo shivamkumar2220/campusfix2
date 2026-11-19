@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Complaints - CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Campus<span>Fix</span></h2>
+        <div>Hi, <b id="student-name"></b> <button class="outline" onclick="logout()">Log out</button></div>
+    </header>
+
+    <main>
+        <form class="box" onsubmit="submitComplaint(); return false;">
+            <h3>New Complaint</h3>
+            <label>Title</label>
+            <input id="title" required placeholder="Wi-Fi not working">
+
+            <label>Location</label>
+            <input id="location" required placeholder="Lab 3">
+
+            <label>Description</label>
+            <textarea id="description" required placeholder="What is the problem?"></textarea>
+
+            <button type="submit">Submit complaint</button>
+            <p id="message"></p>
+        </form>
+
+        <div class="box">
+            <h3>My Complaints</h3>
+            <table>
+                <thead><tr><th>#</th><th>Title</th><th>Location</th><th>Status</th><th>Date</th></tr></thead>
+                <tbody id="complaint-rows"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="complaint.js"></script>
+</body>
+</html>

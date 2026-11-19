@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+    <form class="box" onsubmit="login(); return false;">
+        <h1>Campus<span>Fix</span></h1>
+        <p class="muted">Student Login</p>
+
+        <label>Email</label>
+        <input id="email" type="email" required placeholder="student@campusfix.edu">
+
+        <label>Password</label>
+        <input id="password" type="password" required>
+
+        <button type="submit">Log in</button>
+        <p id="message"></p>
+        <p class="muted small">Demo: student@campusfix.edu or student1@campusfix.edu / Student@123</p>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>
