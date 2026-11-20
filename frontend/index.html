@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="center" onload="loginPage()">
+    <form class="box" onsubmit="login(); return false;">
+        <h1>Campus<span>Fix</span></h1>
+        <p class="muted">Student / Staff Login</p>
+        <label>Email</label>
+        <input id="email" type="email" required placeholder="student@campusfix.edu">
+        <label>Password</label>
+        <input id="password" type="password" required>
+        <button type="submit">Log in</button>
+        <p id="or" class="muted" hidden>or</p>
+        <a id="github" class="github" href="/api/github-login" hidden>Sign in with GitHub</a>
+        <div id="google"></div>
+        <p id="message"></p>
+        <p class="muted small">Students: sanchita, anmol, shalu, jiya, shivam, anjani<br>
+            Staff: anik, jay, kush &nbsp;(@campusfix.edu, password Student@123)</p>
+    </form>
+    <script src="common.js"></script>
+    <script src="login.js"></script>
+    <script src="https://accounts.google.com/gsi/client" onload="googleButton()" async></script>
+</body>
+</html>

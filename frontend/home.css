@@ -1,0 +1,24 @@
+/* Home page only (home.html) */
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; background: white; }
+header h2 { margin: 0; }
+button.outline { width: auto; margin: 0 0 0 10px; padding: 6px 14px; background: white; color: #1b7a43; border: 1px solid #1b7a43; }
+
+/* Form + table side by side, they wrap on phones. Staff has no form, so the table is full width. */
+main { display: flex; flex-wrap: wrap; gap: 20px; padding: 24px; max-width: 1100px; margin: auto; }
+main form { flex: 1 1 280px; }
+main .box:last-child { flex: 3 1 500px; overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #edf2ee; }
+th { color: #6b7d72; font-weight: 600; }
+.badge { background: #e6f2eb; color: #1b7a43; padding: 3px 10px; border-radius: 999px; font-size: 12px; }
+
+select { width: auto; padding: 6px 8px; border: 1px solid #dfe8e2; border-radius: 8px; font: inherit; }
+form select { width: 100%; padding: 10px 12px; border-radius: 10px; }
+
+/* Priority colours */
+.High { color: #dc2626; font-weight: 600; }
+.Medium { color: #d97706; }
+.Low { color: #6b7d72; }
+.Critical { color: #7f1d1d; font-weight: 700; }

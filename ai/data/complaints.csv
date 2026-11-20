@@ -1,0 +1,202 @@
+complaint,category
+Wi-Fi is not working,IT
+Internet is disconnected,IT
+Printer is not printing,IT
+Wi-Fi is very slow,IT
+Wi-Fi password is not working,IT
+Internet connection is slow,IT
+Network is disconnected,IT
+Mobile cannot connect to campus Wi-Fi,IT
+Internet keeps disconnecting,IT
+Unable to access the internet,IT
+Campus Wi-Fi is unavailable,IT
+Network connection keeps dropping,IT
+Cannot connect to the campus network,IT
+Internet speed is extremely slow,IT
+Wi-Fi is not showing on my laptop,IT
+Unable to access the campus internet,IT
+Network is not connecting properly,IT
+Campus internet is unavailable,IT
+Wi-Fi disconnects every few minutes,IT
+Printer is showing an offline error,IT
+Campus Wi-Fi connects but has no internet,IT
+Unable to log in to the campus network,IT
+Internet stops working during online classes,IT
+Wi-Fi signal is weak in the library,IT
+Network authentication failed,IT
+Cannot access university websites,IT
+Campus network is showing limited connectivity,IT
+Internet connection is unstable in the hostel,IT
+Printer is not detecting the connected device,IT
+Printer jobs are stuck in the queue,IT
+Unable to print documents over the network,IT
+Wi-Fi keeps asking for the password,IT
+Network cable is not providing internet,IT
+Internet is unavailable in the computer lab,IT
+Campus Wi-Fi is disconnecting frequently,IT
+Unable to open websites on campus internet,IT
+Network login page is not loading,IT
+Printer is showing a paper communication error,IT
+Computer cannot connect to the campus network,IT
+Internet connection is extremely unstable,IT
+Wi-Fi is connected but websites are not loading,IT
+Unable to access shared network resources,IT
+Campus internet is not working in the hostel,IT
+Network adapter is not detecting Wi-Fi,IT
+Printer is not responding to print commands,IT
+Internet connection drops during video lectures,IT
+Cannot connect to the university Wi-Fi,IT
+Network speed becomes very slow in the evening,IT
+Unable to access the campus portal due to network issues,IT
+Printer is not connecting to the network,IT
+Projector is broken,Classroom
+Projector is not displaying,Classroom
+Projector screen is blank,Classroom
+Projector display is blurry,Classroom
+Classroom projector is not turning on,Classroom
+Projector screen is showing no signal,Classroom
+Classroom display is flickering,Classroom
+Projector is showing a black screen,Classroom
+Classroom projector has no display,Classroom
+Projector image is not visible,Classroom
+Smart board is not working,Classroom
+Classroom display is not turning on,Classroom
+Projector remote is not responding,Classroom
+Projector image is out of focus,Classroom
+HDMI input is not detected by projector,Classroom
+Classroom screen is not displaying content,Classroom
+Smart board touch is not responding,Classroom
+Projector keeps shutting down,Classroom
+Classroom presentation screen is not working,Classroom
+Projector brightness is too low,Classroom
+Projector is not detecting the laptop,Classroom
+Classroom smart board is showing a blank screen,Classroom
+Projector colors are distorted,Classroom
+Classroom speakers are not producing sound,Classroom
+Projector keeps losing its signal,Classroom
+Smart board display is flickering,Classroom
+Classroom microphone is not working,Classroom
+Projector lamp is not turning on,Classroom
+Presentation screen is stuck,Classroom
+Classroom audio system is not working,Classroom
+Projector is displaying the wrong resolution,Classroom
+Smart board is not responding to touch,Classroom
+Classroom display has horizontal lines,Classroom
+Projector remote batteries are not working,Classroom
+HDMI cable is not connecting to the projector,Classroom
+Classroom speakers are producing distorted sound,Classroom
+Projector image is appearing upside down,Classroom
+Smart board is not connecting to the computer,Classroom
+Classroom screen is flickering repeatedly,Classroom
+Projector shuts down during lectures,Classroom
+Classroom microphone has no audio output,Classroom
+Display system is not detecting the presentation,Classroom
+Projector is showing a blue screen,Classroom
+Classroom audio is too low,Classroom
+Smart board calibration is not working,Classroom
+Projector image is not aligned with the screen,Classroom
+Classroom display has no power,Classroom
+Presentation system is freezing repeatedly,Classroom
+Projector is showing an unsupported signal,Classroom
+Classroom speaker connection is not working,Classroom
+AC is not cooling,Maintenance
+Fan is not working,Maintenance
+AC is making noise,Maintenance
+Air conditioner is leaking,Maintenance
+Ceiling fan is not rotating,Maintenance
+Air conditioner is blowing warm air,Maintenance
+Electrical light is not turning on,Maintenance
+Classroom AC is not working,Maintenance
+Fan is making unusual noise,Maintenance
+Tube light is flickering,Maintenance
+Electric switch is not working,Maintenance
+Power socket is damaged,Maintenance
+Classroom lights are not working,Maintenance
+Water is leaking from the AC,Maintenance
+Ceiling fan is rotating slowly,Maintenance
+Room has no electricity,Maintenance
+Air conditioner is making loud noise,Maintenance
+Light keeps turning off,Maintenance
+Electrical socket has no power,Maintenance
+Classroom fan has stopped working,Maintenance
+Classroom AC is leaking water,Maintenance
+Ceiling light is damaged,Maintenance
+Fan regulator is not working,Maintenance
+Classroom electrical wiring is damaged,Maintenance
+Water tap is leaking,Maintenance
+Washroom flush is not working,Maintenance
+Classroom door handle is broken,Maintenance
+Window glass is damaged,Maintenance
+Classroom ceiling has water leakage,Maintenance
+Corridor lights are not working,Maintenance
+Electrical board is overheating,Maintenance
+Classroom switchboard is damaged,Maintenance
+Air conditioner is not starting,Maintenance
+Exhaust fan is not working,Maintenance
+Water cooler is not dispensing water,Maintenance
+Classroom furniture is damaged,Maintenance
+Broken chair needs repair,Maintenance
+Classroom door is not closing properly,Maintenance
+Electrical circuit breaker keeps tripping,Maintenance
+Water pipe is leaking in the corridor,Maintenance
+Classroom has a damaged ceiling fan,Maintenance
+Tube light is completely fused,Maintenance
+Power supply keeps fluctuating in the room,Maintenance
+Washroom water supply is unavailable,Maintenance
+Classroom wall has cracks,Maintenance
+AC remote is not controlling the unit,Maintenance
+Drainage pipe is blocked,Maintenance
+Classroom electrical socket is sparking,Maintenance
+Water cooler is making unusual noise,Maintenance
+Staircase lighting is not working,Maintenance
+Computer is not starting,Lab Equipment
+Lab computer is not working,Lab Equipment
+Lab PC is not booting,Lab Equipment
+Keyboard is not working,Lab Equipment
+Computer monitor is not displaying,Lab Equipment
+Lab PC keeps restarting,Lab Equipment
+Computer keyboard keys are stuck,Lab Equipment
+Lab computer is running very slowly,Lab Equipment
+Mouse is not responding,Lab Equipment
+Computer screen is frozen,Lab Equipment
+CPU is not turning on,Lab Equipment
+Computer keeps shutting down,Lab Equipment
+Lab monitor is showing no signal,Lab Equipment
+Keyboard keys are not responding,Lab Equipment
+Computer mouse is damaged,Lab Equipment
+Lab computer has a boot error,Lab Equipment
+Computer is hanging repeatedly,Lab Equipment
+Desktop system is not starting,Lab Equipment
+Lab PC has no display,Lab Equipment
+Computer USB ports are not working,Lab Equipment
+Lab computer is showing a blue screen,Lab Equipment
+Desktop keyboard is not detected,Lab Equipment
+Computer mouse pointer is moving randomly,Lab Equipment
+Lab monitor has vertical lines,Lab Equipment
+CPU is making unusual noise,Lab Equipment
+Computer is stuck on the boot screen,Lab Equipment
+Lab computer has no sound,Lab Equipment
+Desktop is not detecting the hard drive,Lab Equipment
+Computer takes too long to start,Lab Equipment
+Monitor keeps turning off,Lab Equipment
+Lab PC is showing a memory error,Lab Equipment
+Computer USB device is not recognized,Lab Equipment
+Keyboard is typing incorrect characters,Lab Equipment
+Lab computer is overheating,Lab Equipment
+Desktop power button is not responding,Lab Equipment
+Computer is stuck during startup,Lab Equipment
+Monitor display is distorted,Lab Equipment
+Lab PC is unable to detect the mouse,Lab Equipment
+Computer is showing a disk error,Lab Equipment
+Desktop keeps freezing while running software,Lab Equipment
+Lab computer has a faulty power supply,Lab Equipment
+Computer is not detecting the keyboard,Lab Equipment
+Monitor brightness is not adjustable,Lab Equipment
+Lab PC is restarting automatically,Lab Equipment
+Computer is showing a hardware error,Lab Equipment
+Desktop fan is making loud noise,Lab Equipment
+Computer is not recognizing external storage,Lab Equipment
+Lab monitor is showing a blank screen,Lab Equipment
+Computer is unable to boot into the operating system,Lab Equipment
+Lab workstation is not responding,Lab Equipment
+Lab computer is unable to detect its monitor,Lab Equipment

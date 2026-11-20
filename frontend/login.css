@@ -1,0 +1,12 @@
+/* Login page only (index.html) */
+
+/* Put the box in the middle of the screen */
+.center { min-height: 100vh; display: grid; place-items: center; padding: 16px; }
+.center .box { width: 100%; max-width: 380px; text-align: center; }
+
+/* Google and GitHub buttons */
+#google { display: flex; justify-content: center; }
+.github { display: block; margin-bottom: 10px; padding: 11px; border-radius: 999px; background: #24292f;
+          color: white; font-weight: 600; text-decoration: none; }
+.github:hover { background: #000; }
+.github[hidden] { display: none; }

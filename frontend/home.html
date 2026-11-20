@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints - CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body onload="start()">
+    <header>
+        <h2>Campus<span>Fix</span></h2>
+        <div>Hi, <b id="name"></b> <button class="outline" onclick="logout()">Log out</button></div>
+    </header>
+    <main>
+        <!-- Only students see this form -->
+        <form id="new" class="box" hidden onsubmit="addComplaint(); return false;">
+            <h3>New Complaint</h3>
+            <label>Title</label>
+            <input id="title" required placeholder="Wi-Fi not working">
+            <label>Location</label>
+            <input id="location" required placeholder="Lab 3">
+            <label>Description</label>
+            <textarea id="description" required placeholder="What is the problem?"></textarea>
+            <!-- These 4 answers are used by the priority engine -->
+            <label>How many students are affected?</label>
+            <input id="affected_students" type="number" min="1" value="1" required>
+            <label>How serious is it?</label>
+            <select id="severity"><option>minor</option><option>moderate</option><option>severe</option></select>
+            <label>Effect on studies</label>
+            <select id="academic_impact"><option>low</option><option>medium</option><option>high</option></select>
+            <label>Problem since how many hours?</label>
+            <input id="duration_hours" type="number" min="0" step="0.5" value="1" required>
+            <button type="submit">Submit complaint</button>
+        </form>
+        <div class="box">
+            <h3>Complaints</h3>
+            <p id="message"></p>
+            <table>
+                <thead><tr><th>#</th><th>Student</th><th>Title</th><th>Category</th><th>Priority (score)</th><th>Location</th><th>Description</th><th>Date</th><th>Status</th></tr></thead>
+                <tbody id="rows"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="common.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

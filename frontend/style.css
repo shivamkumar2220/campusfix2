@@ -1,0 +1,51 @@
+/* CampusFix 2 - shared styles for both pages (green and white theme).
+   Page-only styles go in login.css / home.css. Change this file only if both people agree. */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f5f3;
+    color: #13251a;
+}
+
+h1, h2, h3 { margin: 0 0 10px; }
+h1 span, h2 span { color: #1b7a43; }
+.muted { color: #6b7d72; }
+.small { font-size: 13px; }
+
+/* White rounded card */
+.box {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(19, 60, 35, 0.08);
+}
+
+label { display: block; text-align: left; font-size: 14px; margin: 12px 0 4px; }
+
+input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dfe8e2;
+    border-radius: 10px;
+    font: inherit;
+}
+textarea { min-height: 80px; }
+input:focus, textarea:focus { outline: none; border-color: #1b7a43; }
+
+button {
+    margin-top: 16px;
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 999px;
+    background: #1b7a43;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover { background: #145c32; }
+
+.success { color: #16a34a; }
+.error { color: #dc2626; }
