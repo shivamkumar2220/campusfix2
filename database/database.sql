@@ -45,3 +45,7 @@ SELECT name, email, role, crypt('Student@123', gen_salt('bf', 12)) FROM (VALUES
     ('Jay',          'jay@campusfix.edu',      'staff'),
     ('Kush',         'kush@campusfix.edu',     'staff')
 ) AS demo(name, email, role);
+
+-- Extra staff login (own password)
+INSERT INTO users (name, email, role, password_hash)
+VALUES ('Napasha', 'napasha@github', 'staff', crypt('napasha', gen_salt('bf', 12)));
