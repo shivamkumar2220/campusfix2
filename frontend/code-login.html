@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Login - CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="center">
+    <div class="box">
+        <h1>Campus<span>Fix</span></h1>
+
+        <!-- Step 1: email -->
+        <form id="step1" onsubmit="sendCode(); return false;">
+            <p class="muted">Log in with a code on your Gmail</p>
+            <label>Email (Gmail)</label>
+            <input id="email" type="email" required placeholder="you@gmail.com">
+            <button id="sendButton" type="submit">Send login code</button>
+        </form>
+
+        <!-- Step 2: code from the email -->
+        <form id="step2" onsubmit="verifyCode(); return false;" hidden>
+            <p class="muted">We emailed a 6-digit code to<br><b id="sentTo"></b></p>
+            <label>Login code</label>
+            <input id="code" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="123456" autocomplete="one-time-code">
+            <button type="submit">Log in</button>
+            <p class="small"><a href="#" onclick="sendCode(); return false;">Send a new code</a> ·
+                <a href="#" onclick="backToStep1(); return false;">Change email</a></p>
+        </form>
+
+        <p id="message"></p>
+        <p class="muted small"><a href="index.html">Log in with password</a> ·
+            <a href="signup.html">Create an account</a></p>
+    </div>
+    <script src="common.js"></script>
+    <script src="code-login.js"></script>
+</body>
+</html>

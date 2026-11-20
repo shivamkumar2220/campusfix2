@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account - CampusFix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="center">
+    <div class="box">
+        <h1>Campus<span>Fix</span></h1>
+
+        <!-- Step 1: details -->
+        <form id="step1" onsubmit="sendCode(); return false;">
+            <p class="muted">Create a student account</p>
+            <label>Name</label>
+            <input id="name" required maxlength="60" placeholder="Your full name">
+            <label>Email (Gmail)</label>
+            <input id="email" type="email" required placeholder="you@gmail.com">
+            <label>Password</label>
+            <input id="password" type="password" required minlength="8" placeholder="8+ characters, letters and numbers">
+            <label>Confirm password</label>
+            <input id="password2" type="password" required minlength="8">
+            <button id="sendButton" type="submit">Send verification code</button>
+        </form>
+
+        <!-- Step 2: code from the email -->
+        <form id="step2" onsubmit="verifyCode(); return false;" hidden>
+            <p class="muted">We emailed a 6-digit code to<br><b id="sentTo"></b></p>
+            <label>Verification code</label>
+            <input id="code" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="123456" autocomplete="one-time-code">
+            <button type="submit">Verify and create account</button>
+            <p class="small"><a href="#" onclick="sendCode(); return false;">Send a new code</a> ·
+                <a href="#" onclick="backToStep1(); return false;">Change email</a></p>
+        </form>
+
+        <p id="message"></p>
+        <p class="muted small">Already have an account? <a href="index.html">Log in</a></p>
+    </div>
+    <script src="common.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 # Authentication APIs: login (password, Google or GitHub), logout, who am I.
+# (Sign up and login with an email code are in signup.py.)
 # Passwords are checked with bcrypt. The login is kept in a signed HttpOnly cookie (session).
 import json
 import os
@@ -42,6 +43,12 @@ def user(request, role=None):
     return u
 
 
+# Log the user in: save (id, name, role) in the cookie and return it. Used by every login type.
+def start_session(request, row):
+    request.session["user"] = {"id": row[0], "name": row[1], "role": row[2]}
+    return request.session["user"]
+
+
 # Log in a Google/GitHub user by email. New emails become students (staff are added in the database).
 def login_by_email(request, email, name):
     email = email.lower()
@@ -49,8 +56,7 @@ def login_by_email(request, email, name):
     if not rows:  # password_hash "-" = no password, can't use the password form
         rows = sql("INSERT INTO users (name, email, role, password_hash) VALUES (%s, %s, 'student', '-') "
                    "RETURNING id, name, role", (name or email, email))
-    request.session["user"] = {"id": rows[0][0], "name": rows[0][1], "role": rows[0][2]}
-    return request.session["user"]
+    return start_session(request, rows[0])
 
 
 # Call a web API and read the JSON answer. data = form POST, token = logged-in GitHub user.
@@ -73,8 +79,7 @@ def login(data: Login, request: Request):
         wrong_tries[email] = tries + [now]
         raise HTTPException(401, "Wrong email or password")
     wrong_tries.pop(email, None)
-    request.session["user"] = {"id": rows[0][0], "name": rows[0][1], "role": rows[0][2]}
-    return request.session["user"]
+    return start_session(request, rows[0])
 
 
 # Which login buttons to show on the login page
